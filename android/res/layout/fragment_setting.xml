@@ -1,0 +1,354 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ygk.gcodecamera.MainActivity$PlaceholderFragment"
+    android:background="#333333"
+>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         >
+
+        <LinearLayout
+            android:padding="20dp" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+       		android:paddingRight="30dp"
+            android:orientation="vertical" >
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+            <Button
+		        android:id="@+id/ivFromGCode"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_alignParentLeft="true" 
+		        android:text="Import GCode"
+		        android:background="@null"
+		        android:contentDescription=""
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:drawableLeft="@drawable/ic_input_white_48dp" />
+                
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+                <ImageView
+			        android:id="@+id/ivHideSetting"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentTop="true"
+			        android:layout_alignParentRight="true" 
+			        android:layout_marginTop="0dp"
+			        android:layout_marginRight="0dp"
+			        android:src="@drawable/ic_settings_white_48dp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Printer Settings"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+			<TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Printer:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            
+                <EditText
+                    android:id="@+id/etPrinterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+
+                <Button
+                    android:id="@+id/btnSelectPrinterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="LayerHeight:" />
+
+                <EditText
+                    android:id="@+id/etLayerHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="mm" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Material:" />
+
+                <EditText
+                    android:id="@+id/etMaterialType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+
+                <Button
+                    android:id="@+id/btnSelectMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speed:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/etSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mm/s"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/etTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView03331"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Text Style:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/etTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnSelectSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..." />
+
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Color:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/etTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnSelectColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Position:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/etTextPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false" />
+
+                <Button
+                    android:id="@+id/btnSelectTextPosistion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..." />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signature:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/etSignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+	            <Button
+	                    android:id="@+id/btnOK"
+	                    android:layout_weight="1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="OK" />
+            	<Button
+	                    android:id="@+id/btnCancel"
+	                    android:layout_weight="1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:visibility="gone"
+	                    android:text="Cancel" />
+            	
+            	<Button
+	                    android:id="@+id/btnRestoreDefault"
+	                    android:layout_weight="1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Restore Default" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

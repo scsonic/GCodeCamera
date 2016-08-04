@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ygk.gcodecamera.MainActivity$PlaceholderFragment" >
+
+    <SurfaceView
+        android:id="@+id/svCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" 
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:padding="5dp"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/ic_info_outline_white_48dp" />
+        
+    <ImageButton
+        android:id="@+id/ivSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" 
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/ic_settings_white_48dp" />
+    
+    <!-- 
+    <Button
+        android:id="@+id/ivFromGCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" 
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Import GCode"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_input_white_48dp" />
+     -->
+     
+    <Button
+        android:id="@+id/btnLoadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" 
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Load Image"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_add_to_photos_white_48dp" />
+
+    <ImageButton
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="0dp"
+        android:src="@drawable/ic_camera_alt_white_48dp"
+        android:background="@null"
+        android:contentDescription=""
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="24sp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ImageView  
+        android:id="@+id/ivPreview"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription=""
+        android:scaleType="fitStart" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone">
+    </ImageView>
+    
+    <ImageView  
+        android:id="@+id/ivPreviewFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:scaleType="fitCenter" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:contentDescription=""
+        android:visibility="gone">
+        
+    </ImageView>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+    
+</RelativeLayout>
